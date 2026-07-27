@@ -1,38 +1,76 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sangmin Lim - 이력서</title>
+<title>Sang-Min Lim - CV</title>
 <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <aside class="sidebar">
-    <div class="profile-photo" aria-hidden="true"></div>
-    <h1 class="sidebar-name">Sangmin Lim</h1>
+    <svg class="sidebar-landscape" viewBox="0 0 260 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#081b21"/>
+          <stop offset="42%" stop-color="#123f4d"/>
+          <stop offset="70%" stop-color="#2b83a0"/>
+          <stop offset="100%" stop-color="#45b4d0"/>
+        </linearGradient>
+        <linearGradient id="lakeGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1a5f72"/>
+          <stop offset="55%" stop-color="#45b4d0"/>
+          <stop offset="100%" stop-color="#0d2a30"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="260" height="900" fill="url(#skyGradient)"/>
+      <polygon points="0,560 40,500 90,545 140,470 190,530 230,500 260,540 260,900 0,900"
+               fill="#1f5a6b" opacity="0.55"/>
+      <path d="M0,640 L20,600 L30,630 L45,585 L58,625 L72,590 L85,630 L100,595 L115,635
+               L130,600 L145,632 L160,590 L175,628 L190,598 L205,635 L220,600 L235,630
+               L250,595 L260,625 L260,900 L0,900 Z" fill="#163f4c" opacity="0.85"/>
+      <path d="M0,720 L25,660 L40,705 L60,650 L80,700 L100,655 L120,708 L140,652
+               L160,702 L180,658 L200,706 L220,655 L240,700 L260,660 L260,900 L0,900 Z"
+            fill="#0a262e"/>
+      <rect x="0" y="760" width="260" height="140" fill="url(#lakeGradient)"/>
+      <g stroke="#45b4d0" stroke-width="2" opacity="0.3">
+        <line x1="20" y1="800" x2="90" y2="800"/>
+        <line x1="120" y1="820" x2="210" y2="820"/>
+        <line x1="40" y1="845" x2="140" y2="845"/>
+        <line x1="160" y1="865" x2="240" y2="865"/>
+      </g>
+    </svg>
+    <img class="profile-photo" src="images/profile.jpg" alt="Sang-Min Lim" id="profilePhotoTrigger" role="button" tabindex="0" aria-label="View larger photo">
+    <h1 class="sidebar-name">Sang-Min Lim</h1>
     <nav class="sidebar-nav">
       <ul>
-        <li><a href="#about">소개</a></li>
-        <li><a href="#experience">경력</a></li>
-        <li><a href="#education">학력</a></li>
-        <li><a href="#skills">기술</a></li>
-        <li><a href="#interests">관심사</a></li>
-        <li><a href="#awards">수상 및 자격</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Research Interests</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Research Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#awards">Awards</a></li>
       </ul>
     </nav>
   </aside>
 
+  <div class="side-accent-right" aria-hidden="true"></div>
+
   <main class="content">
     <section id="about" class="section">
-      <h2 class="big-name">Sangmin Lim</h2>
-      <p class="contact-line">pierre02@catholic.ac.kr</p>
+      <div class="name-row">
+        <h2 class="big-name">Sang-Min Lim</h2>
+        <p class="contact-line">pierre02@catholic.ac.kr</p>
+      </div>
+      <p class="role-line">Undergraduate Researcher, <br>Biomedical Software Engineering — The Catholic University of Korea</p>
       <p class="about-text">
-        사용자 경험과 성능을 함께 고려하는 프론트엔드 개발자입니다. 새로운 기술을 학습하고
-        팀과 지식을 공유하는 것을 즐기며, 복잡한 문제를 단순하고 명확한 코드로 풀어내는 데
-        관심이 많습니다. 이 문단은 예시 텍스트이며 실제 내용으로 교체될 예정입니다.
+        Undergraduate researcher in Biomedical Software Engineering with hands-on experience in national
+        claims data analysis (HIRA) and clinical prediction modeling. Skilled in R and Python for
+        large-scale health data processing, with a research focus on clinical decision support systems
+        (CDSS) and digital healthcare innovation. Aiming to continue research in medical AI and clinical
+        decision support through a hospital-affiliated graduate program.
       </p>
       <div class="social-links">
-        <a href="#" aria-label="GitHub" class="icon-link">
+        <span class="icon-link disabled" aria-label="GitHub (coming soon)" title="GitHub profile coming soon">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
             <path d="M12 0.5C5.65 0.5 0.5 5.65 0.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56
             0-.28-.01-1.02-.02-2-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71
@@ -43,157 +81,183 @@
             .42.36.79 1.08.79 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12
             C23.5 5.65 18.35.5 12 .5Z"/>
           </svg>
-        </a>
-        <a href="#" aria-label="LinkedIn" class="icon-link">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05
-            c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/>
-          </svg>
-        </a>
-        <a href="mailto:pierre02@catholic.ac.kr" aria-label="이메일" class="icon-link">
+        </span>
+        <a href="mailto:pierre02@catholic.ac.kr" aria-label="Email" class="icon-link">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
             <rect x="2" y="4" width="20" height="16" rx="2"/>
             <path d="M3 6l9 7 9-7"/>
           </svg>
         </a>
       </div>
+      <p class="social-note">GitHub profile coming soon</p>
     </section>
 
     <hr class="divider">
 
-    <section id="experience" class="section">
-      <h3 class="section-title">경력</h3>
-
-      <div class="entry">
-        <div class="entry-main">
-          <h4 class="entry-title">시니어 프론트엔드 개발자</h4>
-          <p class="entry-org">주식회사 예시테크</p>
-          <p class="entry-desc">
-            핵심 제품의 웹 프론트엔드 아키텍처를 설계하고 성능 개선을 주도했습니다.
-            이 내용은 예시 텍스트이며 실제 경력 사항으로 교체될 예정입니다.
-          </p>
-        </div>
-        <div class="entry-period">2023.03 - 현재</div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-main">
-          <h4 class="entry-title">프론트엔드 개발자</h4>
-          <p class="entry-org">예시 스타트업</p>
-          <p class="entry-desc">
-            초기 서비스의 웹 화면을 처음부터 구축하고 디자인 시스템을 정립했습니다.
-            이 내용은 예시 텍스트이며 실제 경력 사항으로 교체될 예정입니다.
-          </p>
-        </div>
-        <div class="entry-period">2021.01 - 2023.02</div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-main">
-          <h4 class="entry-title">주니어 웹 개발자</h4>
-          <p class="entry-org">예시 에이전시</p>
-          <p class="entry-desc">
-            다양한 클라이언트 웹사이트를 개발하고 유지보수하며 실무 기초를 다졌습니다.
-            이 내용은 예시 텍스트이며 실제 경력 사항으로 교체될 예정입니다.
-          </p>
-        </div>
-        <div class="entry-period">2019.03 - 2020.12</div>
-      </div>
+    <section id="interests" class="section">
+      <h3 class="section-title">Research Interests</h3>
+      <ul class="skills-list">
+        <li>Clinical Data Science & Predictive Modeling</li>
+        <li>Digital Health Care & Healthcare Services</li>
+        <li>Medical AI</li>
+      </ul>
     </section>
 
     <hr class="divider">
 
     <section id="education" class="section">
-      <h3 class="section-title">학력</h3>
+      <h3 class="section-title">Education</h3>
 
       <div class="entry">
         <div class="entry-main">
-          <h4 class="entry-title">Biomedical Chemistry Engineering 학사</h4>
-          <p class="entry-org">The Catholic University of Korea</p>
-          <p class="entry-desc">
-            주전공으로 생명공학 및 화학공학 전반의 기초를 다졌습니다.
-          </p>
+          <h4 class="entry-title">Biomedical Chemistry Engineering</h4>
+          <p class="entry-org">College of Biomedical Sciences and Bioengineering, Bucheon · The Catholic University of Korea</p>
         </div>
-        <div class="entry-period">2015.03 - 2019.02</div>
+        <div class="entry-period">2021.03 - 2021.12, 2024.03 - Present</div>
       </div>
 
       <div class="entry">
         <div class="entry-main">
-          <h4 class="entry-title">Biomedical Software Engineering 학사 (복수전공)</h4>
-          <p class="entry-org">The Catholic University of Korea</p>
+          <h4 class="entry-title">Double Major in Biomedical Software Engineering</h4>
+          <p class="entry-org">College of Biomedical Sciences and Bioengineering, Bucheon · The Catholic University of Korea</p>
           <p class="entry-desc">
-            생명공학 지식을 바탕으로 소프트웨어 공학을 접목하는 복수전공을 이수하며,
-            바이오메디컬 도메인과 소프트웨어 개발 역량을 함께 키웠습니다.
+            Bridging biomedical domain knowledge with software engineering and machine learning coursework.
           </p>
         </div>
-        <div class="entry-period">2015.03 - 2019.02</div>
+        <div class="entry-period">2025.09 - Present</div>
       </div>
 
       <div class="entry">
         <div class="entry-main">
-          <h4 class="entry-title">이과 계열</h4>
-          <p class="entry-org">예시고등학교</p>
+          <h4 class="entry-title">Undergraduate Thesis: Real-World Evidence for Defining Standard of Care in Rare Skin Disease Using HIRA Data</h4>
+          <p class="entry-org">Advisor: Hyo Jung Kim, Assistant Professor, Dept. of Biomedical Software Engineering, The Catholic University of Korea</p>
+        </div>
+        <div class="entry-period">2026.03 - Present</div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="experience" class="section">
+      <h3 class="section-title">Research Experience</h3>
+
+      <div class="entry">
+        <div class="entry-main">
+          <h4 class="entry-title">Undergraduate Research Assistant</h4>
+          <p class="entry-org">PHI Lab, The Catholic University of Korea</p>
           <p class="entry-desc">
-            수학과 과학 과목에 흥미를 느끼며 컴퓨터 관련 진로를 준비했습니다.
-            이 내용은 예시 텍스트이며 실제 학력 사항으로 교체될 예정입니다.
+            Conducting nationwide retrospective cohort research on Severe Cutaneous Adverse Reactions
+            (SJS/TEN) using 15 years of HIRA national claims data. Presented ongoing research to a visiting
+            delegation from the University of Cincinnati during Global Healthcare Mobility Week (Mar 2026)
+            and guided the 3-day exchange program comparing Korean and U.S. healthcare systems.
           </p>
         </div>
-        <div class="entry-period">2012.03 - 2015.02</div>
+        <div class="entry-period">2025.12 - Present</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-main">
+          <h4 class="entry-title">Vital-only Septic Shock Prediction</h4>
+          <p class="entry-org">Industry–Academic Medical AI Design, Dept. of Biomedical Software Engineering · Best Project Award</p>
+          <p class="entry-desc">
+            Implemented Sepsis-3 criteria in SQL on MIMIC-IV ICU data, engineered rolling-window vital-sign
+            features, and trained XGBoost models to predict SOFA-component lab values. Conducted an ablation
+            study across three pipeline architectures, identifying error propagation as a key
+            performance-limiting factor.
+          </p>
+        </div>
+        <div class="entry-period">2026.03 - 2026.06</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-main">
+          <h4 class="entry-title">Nationwide Epidemiology and Economic Burden of SJS/TEN in Korea: A 15-Year Claims-Based Analysis</h4>
+          <p class="entry-org">PHI Lab, Collaborative Project with Chonnam National University</p>
+          <p class="entry-desc">
+            Analyzed demographic and clinical characteristics of Stevens–Johnson Syndrome and Toxic
+            Epidermal Necrolysis (SJS/TEN) patients using 15 years of HIRA national claims data; assessed
+            baseline comorbidity burden using the Charlson Comorbidity Index (CCI) and R (data.table,
+            tidyverse, ggplot2, comorbidity) for processing and visualization.
+          </p>
+        </div>
+        <div class="entry-period">2026.02 - 2026.06</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-main">
+          <h4 class="entry-title">Local Large Language Model Deployment and Inference Optimization</h4>
+          <p class="entry-org">Problem-Based Learning (PBL), Dept. of Biomedical Software Engineering</p>
+          <p class="entry-desc">
+            Deployed and optimized a local LLM inference environment using OpenWebUI and Ollama.
+          </p>
+        </div>
+        <div class="entry-period">2025.12</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-main">
+          <h4 class="entry-title">Development of a Nanorod-Based Fluorescence Sensor for mRNA Detection Related to Alzheimer's Disease</h4>
+          <p class="entry-org">Research Student, Dept. of Biomedical-Chemical Engineering · Merit Award</p>
+          <p class="entry-desc">
+            Fabricated nanorods via electrochemical deposition and optimized deposition conditions for a
+            fluorescence-based mRNA detection sensor targeting Alzheimer's disease biomarkers. Presented as
+            a poster at 2025 BMCE.
+          </p>
+        </div>
+        <div class="entry-period">2025.09 - 2025.11</div>
       </div>
     </section>
 
     <hr class="divider">
 
     <section id="skills" class="section">
-      <h3 class="section-title">기술</h3>
+      <h3 class="section-title">Skills</h3>
 
       <div class="skills-group">
-        <h4 class="skills-subtitle">사용 도구</h4>
+        <h4 class="skills-subtitle">Programming & Data Analysis</h4>
         <ul class="skills-list">
-          <li>JavaScript / TypeScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Git</li>
-          <li>Figma</li>
+          <li>Python (pandas, NumPy, scikit-learn, TensorFlow)</li>
+          <li>R (data.table, tidyverse, ggplot2, comorbidity)</li>
+          <li>SQL</li>
         </ul>
       </div>
 
       <div class="skills-group">
-        <h4 class="skills-subtitle">작업 방식</h4>
+        <h4 class="skills-subtitle">Research Methods</h4>
         <ul class="skills-list">
-          <li>애자일 스프린트 기반 협업</li>
-          <li>코드 리뷰 중심의 품질 관리</li>
-          <li>사용자 피드백 기반 반복 개선</li>
-          <li>문서화를 통한 지식 공유</li>
+          <li>Nationwide claims-data (HIRA) cohort study design</li>
+          <li>Clinical prediction modeling (XGBoost, time-series feature engineering)</li>
+          <li>Cross-institutional collaboration & poster presentation</li>
         </ul>
       </div>
-    </section>
-
-    <hr class="divider">
-
-    <section id="interests" class="section">
-      <h3 class="section-title">관심사</h3>
-      <p class="interest-text">
-        새로운 프론트엔드 기술 트렌드를 탐구하고 사이드 프로젝트를 통해 직접 실험해보는
-        것을 좋아합니다. 이 문단은 예시 텍스트이며 실제 내용으로 교체될 예정입니다.
-      </p>
-      <p class="interest-text">
-        주말에는 등산과 사진 촬영을 즐기며, 여행지에서 만난 풍경을 기록하는 것에서
-        즐거움을 느낍니다. 이 문단 역시 예시 텍스트이며 실제 내용으로 교체될 예정입니다.
-      </p>
     </section>
 
     <hr class="divider">
 
     <section id="awards" class="section">
-      <h3 class="section-title">수상 및 자격</h3>
+      <h3 class="section-title">Awards</h3>
       <ul class="awards-list">
-        <li>정보처리기사 (2019)</li>
-        <li>예시 해커톤 대상 (2020)</li>
-        <li>AWS Certified Solutions Architect - Associate (2022)</li>
-        <li>사내 우수 사원상 (2023)</li>
+        <li>Best Project Award — Vital-only Septic Shock Prediction, Industry–Academic Medical AI Design (2026)</li>
+        <li>Merit Award — Development of a Nanorod-Based Fluorescence Sensor for mRNA Detection (2025)</li>
       </ul>
     </section>
   </main>
+
+  <div class="photo-modal" id="photoModal" aria-hidden="true">
+    <div class="photo-modal-backdrop" data-close></div>
+    <div class="photo-modal-content" role="dialog" aria-modal="true" aria-label="Profile photo">
+      <button class="photo-modal-close" type="button" aria-label="Close" data-close>&times;</button>
+      <div class="photo-modal-zoom-wrap">
+        <img src="images/profile.jpg" alt="Sang-Min Lim" class="photo-modal-img" id="photoModalImg">
+      </div>
+      <div class="photo-modal-controls">
+        <button type="button" id="zoomOutBtn" aria-label="Zoom out">−</button>
+        <span id="zoomLevel">100%</span>
+        <button type="button" id="zoomInBtn" aria-label="Zoom in">+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js" defer></script>
 </body>
 </html>
